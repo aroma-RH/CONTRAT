@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            
+
+            <div class="form-group">
+                <label for="group">Select Equipe</label>
+                <select id="group" class="select-input">
+                    <option value="">Select a group...</option>
+                    <option value="-1002408201424">AGRI STRATEGIE</option>
+                    <option value="-1001857451298">AGRI SUPPORT</option>
+                    <option value="-4179123948">BEST PROFIL</option>
+                    <option value="-1002080960662">AGRICONOMIE</option>
+                    <option value="-1002032761527">FARM LABOUR</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="finca">Select Finca</label>
+                <select id="finca" class="select-input">
+                    <option value="">Select a finca...</option>
+                    <option value="FINCA 1">FINCA 1</option>
+                    <option value="FINCA 2">FINCA 2</option>
+                    <option value="FINCA 3">FINCA 3</option>
+                    <option value="FINCA 4">FINCA 4</option>
+                    <option value="FINCA 5">FINCA 5</option>
+                    <option value="FINCA 6">FINCA 6</option>
+                    <option value="FINCA 8">FINCA 8</option>
+                    <option value="FINCA 9">FINCA 9</option>
+                    <option value="FINCA 13">FINCA 13</option>
+                    <option value="FINCA 19">FINCA 19</option>
+                    <option value="FINCA 20">FINCA 20</option>
+                    <option value="FINCA 21">FINCA 21</option>
+                    <option value="FINCA 22">FINCA 22</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="imageUpload">Upload Contrat </label>
+                <div class="upload-area">
+                    <div class="upload-icon">📁</div>
+                    <p>Click to upload files</p>
+                    <input type="file" id="imageUpload" accept="image/*" multiple class="file-input">
+                </div>
+            </div>
+
+            <div id="previewContainer" class="preview-container"></div>
+
+            <button id="sendButton" class="send-button" style="display: none;">
+                📤 Send to Telegram
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
